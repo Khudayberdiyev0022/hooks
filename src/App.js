@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonClickUp from './Function/ButtonClickUp'
 // import FunctionButtonXY from './Function/FunctionButtonXY'
 // import FunctionMouseXY from './Function/FunctionMouseXY'
 // import ButtonClick from './Function/ButtonClick';
@@ -28,6 +29,7 @@ export const nickContext = React.createContext()
 function App() {
   return (
     <div>
+      <ButtonClickUp />
       {/* <FunctionButtonXY /> */}
       {/* <FunctionMouseXY /> */}
       {/* <FunctionInterval /> */}
