@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const FunctionInput = () => {
-    const[name, setName] = useState({firstName: "",  secondName: ""})
+    const[name, setName] = useState({ firstName: "" ,  secondName: "" })
     return (
         <div>
             <h1>{name.firstName}</h1>

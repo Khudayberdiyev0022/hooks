@@ -1,5 +1,7 @@
 import React from 'react'
-import ButtonClickUp from './Function/ButtonClickUp'
+import Test1 from './Function/Test1'
+import Test2 from './Function/Test2'
+// import ButtonClickUp from './Function/ButtonClickUp'
 // import FunctionButtonXY from './Function/FunctionButtonXY'
 // import FunctionMouseXY from './Function/FunctionMouseXY'
 // import ButtonClick from './Function/ButtonClick';
@@ -29,7 +31,9 @@ export const nickContext = React.createContext()
 function App() {
   return (
     <div>
-      <ButtonClickUp />
+      <Test2 />
+      {/* <Test1 /> */}
+      {/* <ButtonClickUp /> */}
       {/* <FunctionButtonXY /> */}
       {/* <FunctionMouseXY /> */}
       {/* <FunctionInterval /> */}
