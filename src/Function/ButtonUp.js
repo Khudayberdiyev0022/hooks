@@ -6,7 +6,7 @@ const ButtonUp = () => {
         setValue(value + 1)
     }
     const Down = () => {
-        value &&    setValue(value - 1)
+        value && setValue(value - 1)
     }
     const UpFive = () => {
         for (let i = 0; i < 5; i++) {

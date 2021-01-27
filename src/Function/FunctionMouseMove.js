@@ -10,14 +10,14 @@ const FunctionMouseMove = () => {
         setY(e.clientY)
     }
     useEffect(() => {
-       window.addEventListener("mousemove" , logMousePosition)
-        }, [])
+        window.addEventListener("mousemove", logMousePosition)
+    }, [])
 
     return (
         <div>
-            <input type="text" 
-            value={name}
-            onChange={(e)=> setName(e.target.value)}
+            <input type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
             />
             <h1>X: {x}</h1>
             <h1>Y: {y}</h1>

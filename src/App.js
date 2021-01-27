@@ -1,6 +1,6 @@
 import React from 'react'
-import Test1 from './Function/Test1'
 import Test2 from './Function/Test2'
+// import Test1 from './Function/Test1'
 // import ButtonClickUp from './Function/ButtonClickUp'
 // import FunctionButtonXY from './Function/FunctionButtonXY'
 // import FunctionMouseXY from './Function/FunctionMouseXY'

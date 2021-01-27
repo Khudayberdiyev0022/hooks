@@ -7,11 +7,11 @@ const FunctionEffect10 = () => {
     }
 
     useEffect(() => {
-       const interval = setInterval(increase, 1000)
-       return () => {
-           clearInterval(interval)
-       }
-        })
+        const interval = setInterval(increase, 1000)
+        return () => {
+            clearInterval(interval)
+        }
+    })
     return (
         <div>
             <h1> Count: {count} </h1>

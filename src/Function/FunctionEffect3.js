@@ -1,16 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 const FunctionEffect3 = () => {
     const [count, setCount] = useState(0)
-useEffect(() => {
-    const interval = setInterval(rise, 1000)
-    return () => {
-        clearInterval(interval)
+    useEffect(() => {
+        const interval = setInterval(rise, 1000)
+        return () => {
+            clearInterval(interval)
+        }
+    }, [count])
+    const rise = () => {
+        setCount(count + 1)
     }
-}, [count])
-const rise = () => {
-    setCount(count + 1)
-}
 
 
     return (

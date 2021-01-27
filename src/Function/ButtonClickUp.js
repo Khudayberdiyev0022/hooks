@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Zoom from  'react-reveal/Zoom'
+import Zoom from 'react-reveal/Zoom'
 // import Fade from  'react-reveal/Fade'
 
 const ButtonClickUp = () => {
@@ -15,7 +15,7 @@ const ButtonClickUp = () => {
     }
 
     const clickMeUp5 = () => {
-        for(let i=0; i<5; i++){
+        for (let i = 0; i < 5; i++) {
             setValue(prevvalue => prevvalue + 1)
         }
     }
@@ -26,13 +26,13 @@ const ButtonClickUp = () => {
     return (
         <div >
             <Zoom right>
-            <h1 style={{textAlign: 'center'}}>This number: {value} !!!</h1>
+                <h1 style={{ textAlign: 'center' }}>This number: {value} !!!</h1>
             </Zoom>
-            <div style={{display: 'flex' , justifyContent: 'center'}}>
-            <button type="button" onClick={clickMeUp}>clickMeUp</button>
-            <button type="button" onClick={clickMeDown}>clickMeDown</button>
-            <button type="button" onClick={clickMeUp5}>clickMeUp5</button>
-            <button type="button" onClick={restart}>restart</button>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <button type="button" onClick={clickMeUp}>clickMeUp</button>
+                <button type="button" onClick={clickMeDown}>clickMeDown</button>
+                <button type="button" onClick={clickMeUp5}>clickMeUp5</button>
+                <button type="button" onClick={restart}>restart</button>
             </div>
         </div>
     )

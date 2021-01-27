@@ -12,7 +12,7 @@ const ButtonClick = () => {
                 <input type="text"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                
+
                 />
                 <button type='submit'>onClick</button>
             </form>

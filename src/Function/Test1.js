@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
 
 const Test1 = () => {
-        const[value, setValue] = useState(0)
-        
+    const [value, setValue] = useState(0)
+
     const clickFunction = () => {
         setValue(value + 1)
     }
     const clickFunction2 = () => {
-       value && setValue(value - 1)
+        value && setValue(value - 1)
     }
     const clickFunction3 = () => {
-        for(let i = 0; i < 5; i++){
+        for (let i = 0; i < 5; i++) {
             setValue(prevValue => prevValue + 1)
         }
     }
     const clickFunction4 = () => {
-        for(let i = 0; i < 5; i++){
-           value && setValue(prevValue => prevValue - 1)
+        for (let i = 0; i < 5; i++) {
+            value && setValue(prevValue => prevValue - 1)
         }
     }
     const clickFunction5 = () => {
