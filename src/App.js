@@ -1,7 +1,8 @@
 import React from 'react'
-import Radius from './Reduce/Radius'
-import Button from './Reduce/Button'
-import FruncWdHg from './Reduce/FuncWdHg'
+// import Radius from './Reduce/Radius'
+import Triangle from './Reduce/Triangle'
+// import Button from './Reduce/Button'
+// import FruncWdHg from './Reduce/FuncWdHg'
 // import FuncReduceAPI from './Reduce/FuncReduceAPI'
 // import FuncReduceObject from './Reduce/FuncReduceObject'
 // import FunctionAxios from './Reduce/FunctionAxios'
@@ -39,9 +40,10 @@ export const nickContext = React.createContext()
 function App() {
   return (
     <div>
-      <Radius />
-      <FruncWdHg />
-      <Button />
+      <Triangle />
+      {/* <Radius /> */}
+      {/* <FruncWdHg /> */}
+      {/* <Button /> */}
       {/* <FunctionAxios /> */}
       {/* <FuncReduceAPI /> */}
       {/* <FuncReduceObject /> */}
