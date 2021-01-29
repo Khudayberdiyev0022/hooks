@@ -1,0 +1,21 @@
+.square {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: #000;
+    transition: all .7s ease;
+}
+
+.square div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    margin: auto;
+}

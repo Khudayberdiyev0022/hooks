@@ -1,5 +1,13 @@
 import React from 'react'
-import Test2 from './Function/Test2'
+import Radius from './Reduce/Radius'
+import Button from './Reduce/Button'
+import FruncWdHg from './Reduce/FuncWdHg'
+// import FuncReduceAPI from './Reduce/FuncReduceAPI'
+// import FuncReduceObject from './Reduce/FuncReduceObject'
+// import FunctionAxios from './Reduce/FunctionAxios'
+// import Test2 from './Function/Test2'
+// import FuncReduce from './Reduce/FuncReduce'
+// import FuncValue from './Reduce/FunctionValue'
 // import Test1 from './Function/Test1'
 // import ButtonClickUp from './Function/ButtonClickUp'
 // import FunctionButtonXY from './Function/FunctionButtonXY'
@@ -31,7 +39,15 @@ export const nickContext = React.createContext()
 function App() {
   return (
     <div>
-      <Test2 />
+      <Radius />
+      <FruncWdHg />
+      <Button />
+      {/* <FunctionAxios /> */}
+      {/* <FuncReduceAPI /> */}
+      {/* <FuncReduceObject /> */}
+      {/* <FuncValue /> */}
+      {/* <FuncReduce /> */}
+      {/* <Test2 /> */}
       {/* <Test1 /> */}
       {/* <ButtonClickUp /> */}
       {/* <FunctionButtonXY /> */}
