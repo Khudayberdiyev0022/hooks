@@ -42,59 +42,66 @@ const FuncWdHg = () => {
     const SizeY = sizer(state.y)
     console.log(SizeX, SizeY);
     return (
-        <div className="ui segment">
-            <form 
-            className="ui form"
-            onSubmit={
-                e => {
-                    e.preventDefault()
-                    dispatch({ type: "SUBMIT" })
-                }
-            }>
-                <input 
-                className="ui input"
-                type="number"
-                    placeholder="Width"
-                    value={state.x}
-                    onChange={(e) => !state.clicked && dispatch({ type: "WIDTH", value: e.target.value })}
-                />
-                <input 
-                className="ui input"
-                type="number"
-                    placeholder="Hight"
-                    value={state.y}
-                    onChange={(e) => !state.clicked && dispatch({ type: "HEIGHT", value: e.target.value })}
-                />
-                <button 
-                className="ui button"
-                type="submit">Submit</button>
+        <div className="ui container">
+            <form
+                className="ui form"
+                onSubmit={
+                    e => {
+                        e.preventDefault()
+                        dispatch({ type: "SUBMIT" })
+                    }
+                }>
+                <div className="ui blue segment" style={{ width: "30%", margin: "auto" }}>
+                    <label className="ui purple label">Width</label>
+                    <input
+                        className="ui input"
+                        type="number"
+                        value={state.x}
+                        onChange={(e) => !state.clicked && dispatch({ type: "WIDTH", value: e.target.value })}
+                    />
+                    <label className="ui purple label">Height</label>
+                    <input
+                        className="ui input"
+                        type="number"
+                        value={state.y}
+                        onChange={(e) => !state.clicked && dispatch({ type: "HEIGHT", value: e.target.value })}
+                    />
+                    <div class="ui two bottom attached buttons">
+                        <button
+                            className="ui button teal"
+                            type="submit">Submit</button>
+                        <button
+                            className="ui inverted red button"
+                            type="reset" onClick={() => dispatch({ type: "RESET" })}>Reset</button>
+                    </div>
+                </div>
             </form>
-            <button 
-                className="ui button"
-            type="reset" onClick={() => dispatch({ type: "RESET" })}>Reset</button>
-            {
+
+            {/* {
                 state.clicked
-                    ? <div>
+                    && <div>
                         <h1>{state.x}sm</h1>
                         <h1>{state.y}sm</h1>
                     </div>
-                    : <h1>Please enter width and height</h1>
-            }
-            <div className='square' style={{ width: `${state.x * detailX.value + 1}px`, height: `${state.y * detailY.value + 1}px` }}>
-                <h5>{SizeX}{detailX.name}</h5>
-                <div>
-                    <h5>{SizeX}{detailX.name} </h5>
-                    <h5>{SizeY}{detailY.name} </h5>
-                </div>
-                <h5>{SizeY}{detailY.name}</h5>
-            </div>
+                    
+            } */}
             {
                 state.clicked
-                && <div>
-                    <h1>Yuza(Surface): {state.x * state.y}sm<sup>2</sup> </h1>
-                    <h1>Cheti(Perimetr): {(Number(state.x) + Number(state.y)) * 2}sm</h1>
+                && <div style={{ textAlign: "center", marginTop: "10px" }}>
+                    <h3>Yuza(Surface): {state.x * state.y}sm<sup>2</sup> </h3>
+                    <h3>Cheti(Perimetr): {(Number(state.x) + Number(state.y)) * 2}sm</h3>
                 </div>
             }
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <div className='square' style={{ width: `${state.x * detailX.value + 1}px`, height: `${state.y * detailY.value + 1}px` }}>
+                    {/* <h5>{SizeX}{detailX.name}</h5>
+                    <div>
+                        <h5>{SizeX}{detailX.name} </h5>
+                        <h5>{SizeY}{detailY.name} </h5>
+                    </div>
+                    <h5>{SizeY}{detailY.name}</h5> */}
+                </div>
+            </div>
         </div>
     )
 }

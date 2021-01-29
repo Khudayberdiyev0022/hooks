@@ -58,12 +58,12 @@ const Triangle = () => {
     }
     return (
         <div className="ui container">
-            <h1>{JSON.stringify(state)}</h1>
+            {/* <h1>{JSON.stringify(state)}</h1> */}
             <form className="ui form" onSubmit={(e) => {
                 e.preventDefault()
                 dispatch({ type: "SUBMIT" })
-            }}>
-                <div className="ui segment">
+            }}>"
+                <div className="ui green segment" style={{ width: "30%", margin: "auto" }}>
                     <label className="ui purple label">Side A</label>
                     <input
                         required
@@ -104,12 +104,12 @@ const Triangle = () => {
                         value={state.angle}
                         onChange={(e) => dispatch({ type: "ANGLE", value: e.target.value })}
                     />
-                </div>
-                <div class="ui two bottom attached buttons">
-                    <button type="submit" className="ui button teal">Submit</button>
-                    <button type="reset" className="ui inverted red button" onClick={() => dispatch({ type: "RESET" })}>Reset</button>
-                </div>
 
+                    <div class="ui two bottom  buttons" style={{ marginTop: "1rem" }}>
+                        <button type="submit" className="ui button teal">Submit</button>
+                        <button type="reset" className="ui inverted red button" onClick={() => dispatch({ type: "RESET" })}>Reset</button>
+                    </div>
+                </div>
             </form>
             {
                 state.clicked
