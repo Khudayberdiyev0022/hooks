@@ -15,11 +15,12 @@ const Navbar = () => {
                         <Link to="/triangle"> Triangle </Link>
                     </button>
                     <button className="ui inverted blue button">
-                        <FaRadiationAlt />
+                        <GiCube />
                         <Link to="/kvadrat"> Kvadrat </Link>
                     </button>
                     <button className="ui inverted orange button">
-                        <GiCube />
+
+                        <FaRadiationAlt />
                         <Link to="/radius"> Radius </Link>
                     </button>
 

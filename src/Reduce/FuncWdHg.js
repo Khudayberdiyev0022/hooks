@@ -77,14 +77,14 @@ const FuncWdHg = () => {
                 </div>
             </form>
 
-            {/* {
+             {/* {
                 state.clicked
                     && <div>
                         <h1>{state.x}sm</h1>
                         <h1>{state.y}sm</h1>
                     </div>
                     
-            } */}
+            }  */}
             {
                 state.clicked
                 && <div style={{ textAlign: "center", marginTop: "10px" }}>
@@ -92,14 +92,14 @@ const FuncWdHg = () => {
                     <h3>Cheti(Perimetr): {(Number(state.x) + Number(state.y)) * 2}sm</h3>
                 </div>
             }
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", justifyContent: "center"}}>
                 <div className='square' style={{ width: `${state.x * detailX.value + 1}px`, height: `${state.y * detailY.value + 1}px` }}>
-                    {/* <h5>{SizeX}{detailX.name}</h5>
+                    <h5>{SizeX}{detailX.name}</h5>
                     <div>
                         <h5>{SizeX}{detailX.name} </h5>
                         <h5>{SizeY}{detailY.name} </h5>
                     </div>
-                    <h5>{SizeY}{detailY.name}</h5> */}
+                    <h5>{SizeY}{detailY.name}</h5>
                 </div>
             </div>
         </div>

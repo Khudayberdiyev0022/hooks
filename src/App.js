@@ -1,13 +1,14 @@
 import React from 'react'
-import Navbar from './Navbar'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom'
-import FuncWdHg from './Reduce/FuncWdHg'
-import Triangle from './Reduce/Triangle'
-import Radius from './Reduce/Radius'
+import ToDoUp from './ToDoUp'
+// import Navbar from './Navbar'
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route
+// } from 'react-router-dom'
+// import FuncWdHg from './Reduce/FuncWdHg'
+// import Triangle from './Reduce/Triangle'
+// import Radius from './Reduce/Radius'
 // import Triangle from './Reduce/Triangle'
 // import Button from './Reduce/Button'
 // import FruncWdHg from './Reduce/FuncWdHg'
@@ -48,20 +49,21 @@ export const nickContext = React.createContext()
 function App() {
   return (
     <div>
-      <Router>
+      <ToDoUp />
+      {/* <Router>
         <Navbar />
         <Switch>
-          <Route path='/radius'>
+          <Route exact path='/radius'>
             <Radius />
           </Route>
-          <Route path='/triangle'>
+          <Route exact path='/triangle'>
             <Triangle />
           </Route>
-          <Route path='/kvadrat'>
+          <Route exact path='/kvadrat'>
             <FuncWdHg />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
       {/* <Radius /> */}
       {/* <FruncWdHg /> */}
       {/* <Button /> */}
