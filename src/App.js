@@ -1,5 +1,9 @@
 import React from 'react'
-import ToDoUp from './ToDoUp'
+// import Age from './Callback/Age'
+// import Collback from './Callback/Collback'
+// import Salary from './Callback/Salary'
+// import Title from './Callback/Title'
+// import ToDoUp from './ToDoUp'
 // import Navbar from './Navbar'
 // import {
 //   BrowserRouter as Router,
@@ -49,7 +53,11 @@ export const nickContext = React.createContext()
 function App() {
   return (
     <div>
-      <ToDoUp />
+      {/* <Salary />
+      <Age />
+      <Title />
+      <Collback /> */}
+      {/* <ToDoUp /> */}
       {/* <Router>
         <Navbar />
         <Switch>
